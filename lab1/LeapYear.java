@@ -7,8 +7,8 @@ public class LeapYear {
      *  - divisible by 400 or
      *  - divisible by 4 and not by 100.
      */
-    private static void isLeapYear(int year) {
-        year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
+    public static boolean isLeapYear(int year) {
+        return (year % 400) == 0 || (year % 4) == 0 && (year % 100) != 0;
     }
 
     /** Calls isLeapYear to print correct statement.
